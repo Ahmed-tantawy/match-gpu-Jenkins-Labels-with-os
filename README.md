@@ -1,0 +1,3 @@
+Jenkins labels vs consistency check. I have found out that some workstations had wrong gpu labels. 
+We need some script which will monitor the jenkins label AND the hw on the machine and based on it would WARN us that labels do not match... 
+e.g. not enough GPU memory for given label, or label missing for ram_high or GPU etc.. Whoever picks this one, ping me
