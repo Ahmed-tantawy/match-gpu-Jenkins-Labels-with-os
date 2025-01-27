@@ -1,3 +1,3 @@
-Jenkins labels vs consistency check. I have found out that some workstations had wrong gpu labels. 
-We need some script which will monitor the jenkins label AND the hw on the machine and based on it would WARN us that labels do not match... 
-e.g. not enough GPU memory for given label, or label missing for ram_high or GPU etc.. Whoever picks this one, ping me
+This Jenkins Pipeline checks a Windows node’s NVIDIA GPUs for correct labeling. It queries nvidia-smi for each GPU’s memory, 
+ensures they match (if multiple), and compares the total (or first) memory size against a predefined label map (e.g., gpu_16, gpu_24, gpu_48). 
+If labels are missing or mismatched, it marks the job as UNSTABLE, helping you maintain accurate GPU labels per node
