@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Define multiple email recipients
-                    def emailRecipients = 'example@gmail.com' // Add your email addresses here
+                    def emailRecipients = 'example@gmail.com, example2@gmail.com' // Add your email addresses here
                     def emailSubject = "GPU Label Check Warnings/Errors on Node ${env.NODE_NAME}"
                     def emailBody = ""
 
