@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 import os
 
 # Configuration
-EMAIL_RECIPIENTS = "mygmail@gmail.com, mygmail23@gmail.com"
+EMAIL_RECIPIENTS = "mygmail@gmail.com"
 EMAIL_SUBJECT = "GPU Label Check Warnings/Errors"
 NODE_NAME = os.getenv("COMPUTERNAME", "unknown-node")  # Get the node name from environment variables
 
